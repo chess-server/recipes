@@ -1,0 +1,100 @@
+################################################################################
+#
+# OPMyUtilsBundle/Resources/config/config_myutils
+#
+# Service Definition for Services from MyUtilsBundle
+#
+# Version 2.2.0
+#
+# History: 
+# 2.0.0: c/o from previous version
+# 2.1.0: Added service for op.form.twig.extension, start removing parameters
+# 2.2.0: removed ladybug wrapper service
+# 2.3.0: added OPDatePickerExtension, which adds a datepicker to datetime fields
+# 2.3.1: remove deprecated alias statements from extensions
+# 2.3.2: quote the %variables%
+# 2.4.0: remove BirthdayType and BirthdayExtension
+# 2.5.0: add back BirthdayType and remove OPAutocompleteType
+#
+################################################################################
+#
+# This file is only for reference! Use a wrapper in the App which extends the classes
+#
+################################################################################
+
+#################
+# Configurations
+#################
+#sc_datetimepicker:
+#    picker: ~
+
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+
+#    OP\MyUtilsBundle\:
+#        resource: '@OPMyUtilsBundle/*'
+#        exclude:  '@OPMyUtilsBundle/{Entity,Repository,Tests,Event,DataFixtures,Util}'
+
+#    OP\MyUtilsBundle\Controller\:
+#        resource: '@OPMyUtilsBundle/Controller'
+#        tags:   ['controller.service_arguments']
+
+#    OP\MyUtilsBundle\Command\:
+#        resource: '@OPMyUtilsBundle/Command'
+#        tags:   ['controller.service_arguments']
+
+#    op.conversion_handler:  '@OP\MyUtilsBundle\Libs\ConversionHandler'
+    new_autocomplete:       '@OP\MyUtilsBundle\Form\Type\NewAutocompleteType'
+    op_toggle_type:         '@OP\MyUtilsBundle\Form\Type\ToggleType'
+    op_datetimepicker:      '@OP\MyUtilsBundle\Form\Type\DateTimePickerType'
+    op_birthdaytype:        '@OP\MyUtilsBundle\Form\Type\BirthdayType'
+
+    OP\MyUtilsBundle\Controller\MyTraitController: ~
+    OP\MyUtilsBundle\Command\MyTraitBaseCommand: ~
+    OP\MyUtilsBundle\Controller\underConstructionController: ~
+    OP\MyUtilsBundle\Libs\MyBaseManager: ~
+
+#    OP\MyUtilsBundle\Command\ConfigParameterCommand: ~
+
+    OP\MyUtilsBundle\Util\TokenGenerator: ~
+
+    OP\MyUtilsBundle\Form\Type\DateTimePickerType: ~
+#        tags:
+#         - { name: form.type }
+    OP\MyUtilsBundle\Form\Type\BirthdayType: ~
+    OP\MyUtilsBundle\Form\Type\DateRangePickerType: ~
+    OP\MyUtilsBundle\Form\Type\NewAutocompleteType: ~
+    OP\MyUtilsBundle\Form\Type\ToggleType: ~
+    OP\MyUtilsBundle\Form\Type\YesNoType: ~
+
+    OP\MyUtilsBundle\Libs\ConversionHandler: ~
+    OP\MyUtilsBundle\Twig\Extension\OPTwigFunctions: ~
+    OP\MyUtilsBundle\Twig\Extension\BootstrapTwigExtension: ~
+    OP\MyUtilsBundle\Twig\Extension\BootstrapButtonTwigExtension: ~
+    OP\MyUtilsBundle\Twig\Extension\BootstrapFormTwigExtension: ~
+
+    OP\MyUtilsBundle\Libs\MyLoggerService:
+      arguments:
+          [ "@monolog.logger",
+            "@monolog.logger.chess",
+            "@monolog.logger.user",
+            "@monolog.logger.timevio",
+            "@monolog.logger.rating",
+            "@monolog.logger.mail",
+            "@monolog.logger.doctrine",
+            "@monolog.logger.event",
+            "@monolog.logger.php",
+            "@monolog.logger.request",
+            "@monolog.logger.security",
+            "@monolog.logger.session",
+            "@monolog.logger.todo",
+            "@monolog.logger.translation",
+            "@monolog.logger.console",
+            "@monolog.logger.console_very_verbose"
+            ]
+
+
