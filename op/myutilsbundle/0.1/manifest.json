@@ -1,9 +1,9 @@
 {
 	"bundles": {
-		"OP\\MyUtilsBundle\\OPMyUtilsBundle": ["all"]
-	},
-	"aliases": ["myutils"],
- 	"copy-from-recipe": {
-        	"config/": "%CONFIG_DIR%/"
+        	"Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": ["all"]
+    	},
+    	"copy-from-recipe": {
+        	"config/": "%CONFIG_DIR%/",
+        	"src/": "%SRC_DIR%/"
 	}
 }
