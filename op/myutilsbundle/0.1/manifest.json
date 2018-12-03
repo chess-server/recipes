@@ -1,5 +1,8 @@
 {
-	"aliases": ["myutils", "opmyutils", "myutilsbundle", "opmyutilsbundle"],
+	"bundles": {
+		"OP\\MyUtilsBundle\\OPMyUtilsBundle\\OPMyUtilsBundle": ["all"]
+	},
+	"aliases": ["myutils"],
  	"copy-from-recipe": {
         	"config/": "%CONFIG_DIR%/"
 	}
