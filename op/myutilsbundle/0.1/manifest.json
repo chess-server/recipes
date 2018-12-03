@@ -1,5 +1,5 @@
 {
-    "aliases": [ "myutils" ],
+    "aliases": [ "myutils", "opmyutils" ],
     "bundles": {
         "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": ["all"]
     }
