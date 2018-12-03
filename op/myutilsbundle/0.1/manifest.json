@@ -1,13 +1,6 @@
 {
-	"aliases": ["myutils"]
-},
+	"aliases": ["myutils"],
  	"copy-from-recipe": {
         	"config/": "%CONFIG_DIR%/"
-},
-{
-	"container": {
-		"conversion_handler_class": "OP\MyUtilsBundle\Libs\ConversionHandler",
-		"chess_server_array_class": "OP\MyUtilsBundle\Libs\StandardArrays",
-		"yaml_utils_class":         "OP\MyUtilsBundle\Libs\YAMLUtils"
 	}
 }
