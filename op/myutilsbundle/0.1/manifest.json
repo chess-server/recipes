@@ -1,6 +1,6 @@
 {
 	"bundles": {
-		"OP\\MyUtilsBundle\\OPMyUtilsBundle\\OPMyUtilsBundle": ["all"]
+		"OP\\MyUtilsBundle\\OPMyUtilsBundle": ["all"]
 	},
 	"aliases": ["myutils"],
  	"copy-from-recipe": {
