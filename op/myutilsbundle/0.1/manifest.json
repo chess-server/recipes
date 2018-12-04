@@ -1,6 +1,6 @@
 {
-    "aliases": [ "myutils", "opmyutils" ],
-    "bundles": {
-        "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": ["all"]
+    "aliases": [ "myutils" ],
+    "env": {
+        "APP_OP_VERS": "0.1"
     }
 }
