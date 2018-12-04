@@ -1,6 +1,6 @@
 {
-	"aliases": ["myutils", "opmyutils", "myutilsbundle"],
- 	"copy-from-recipe": {
-        	"config/": "%CONFIG_DIR%/"
-	}
+    "aliases": [ "myutils" ],
+    "env": {
+        "APP_OP_VERS": "0.1"
+    }
 }
