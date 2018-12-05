@@ -2,5 +2,9 @@
     "aliases": [ "myutils" ],
     "env": {
         "APP_OP_VERS": "0.1"
+    },
+    "projects": {
+        "PROJECT_ULID": "01CXZS3BWE8N14RZPBD70S7TD6"
     }
+
 }
