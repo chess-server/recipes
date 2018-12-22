@@ -1,6 +1,0 @@
-{
-    "aliases": [ "myutils" ],
-    "env": {
-        "APP_OP_VERS": "0.1"
-    }
-}

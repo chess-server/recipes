@@ -1,0 +1,6 @@
+{
+    "aliases": [ "legacy" ],
+    "bundles": { 
+	    "Chess\\LegacyBundle\\ChessLegacyBundle": [ "all" ]
+    }
+}
